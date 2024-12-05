@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.bg-gradient {
+  height: 100%;
+  margin: 0;
+  background: #ef32d9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #89fffd, #ef32d9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #89fffd, #ef32d9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.box-sdw {
+  webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+header a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid #cbd5e1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  margin-right: 22px;
+  margin-bottom: 30px;
+  color: #64748b;
+}
+header a:hover{
+  /* background: #c026d3; */
+  @apply bg-primary;
+  transform: scale(1.1);
+  color: white;
+}
